@@ -20,6 +20,11 @@ function Footer() {
   const toHome = () => {
     history.push('/home')
   };
+  const handleClick = (route) => {
+    console.log(route, "route")
+    history.push(`/${route}`)
+
+  }
   return (
     <div className="App-footer-with-links">
       <p onClick={toHome}>Home</p>

@@ -113,7 +113,18 @@ font-family: 'Josefin Sans', sans-serif;*/
 
 
 }
-
+/*LIST*/
+.list {
+  margin: 30px;
+  padding-top: 30px;
+}
+.item {
+  text-transform: uppercase;
+  color: #7eeddb;
+}
+.item:hover {
+  color: #d6f75c;
+}
 /*CARD STYLES*/
 .card-container {
   min-height: 300px;
