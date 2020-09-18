@@ -8,7 +8,7 @@ function AllChallenges() {
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <h1 className="howdy">Challenges</h1>
+        <h1 className="howdy">All Challenges</h1>
         <p>Coming soon, thank you for your fucking patience.</p>
       </div>
         <Footer></Footer>

@@ -8,7 +8,7 @@ function UserStats() {
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <h1 className="howdy">UserStats</h1>
+        <h1 className="howdy">User Stats</h1>
         <p>Coming soon, thank you for your fucking patience.</p>
       </div>
       <Footer></Footer>

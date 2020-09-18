@@ -9,7 +9,7 @@ function MyChallenges() {
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <h1 className="howdy">MyChallenges</h1>
+        <h1 className="howdy">My Challenges</h1>
         <p>Coming soon, thank you for your fucking patience.</p>
       </div>
       <Footer></Footer>

@@ -17,8 +17,12 @@ function Footer() {
   const toTrashTalkForum = () => {
     history.push('/trash-talk-forum')
   };
+  const toHome = () => {
+    history.push('/home')
+  };
   return (
     <div className="App-footer-with-links">
+      <p onClick={toHome}>Home</p>
       <p onClick={toAllChallenges}>All challenges</p>
       <p onClick={toMyChallenges}>My Challenges</p>
       <p onClick={toUserStats}>User Stats</p>
