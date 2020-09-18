@@ -1,16 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import Home from './components/Home.js';
-import './App.css';
+// import React from 'react';
+// import Home from './components/Home.js';
+// import './App.css';
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <Home></Home>
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+import React from 'react';
+import { Router } from 'react-router-dom';
+import history from './services/history';
+import Routes from './routes';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home></Home>
-      </header>
-    </div>
+    <Router history={history}>
+      <Routes />
+    </Router>
   );
 }
-
 export default App;

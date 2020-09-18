@@ -11,7 +11,7 @@ function Card() {
       <body className="card-body">
         <p>Completed: 10/30</p>
         <p>
-          <a href={}>My Challenges</a>
+          <a>My Challenges</a>
         </p>
       </body>
       <footer className="card-footer">
