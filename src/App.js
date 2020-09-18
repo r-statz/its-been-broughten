@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import history from './services/history';
 import Routes from './routes/index';
-console.log(history, "history")
 
 function App() {
   return (

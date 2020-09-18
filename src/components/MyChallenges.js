@@ -4,18 +4,17 @@ import Footer from './Footer.js';
 import Header from './Header.js';
 import ScrollMenuComponent from './ScrollMenuComponent.js';
 
-function Home() {
+function MyChallenges() {
   return (
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <p className="howdy">Howdy, Anchovy Special...</p>
-        <p className="howdy">You ready to bring it?</p>
-        <ScrollMenuComponent></ScrollMenuComponent>
+        <h1 className="howdy">MyChallenges</h1>
+        <p>Coming soon, thank you for your fucking patience.</p>
       </div>
       <Footer></Footer>
     </div>
   );
 }
 
-export default Home;
+export default MyChallenges;

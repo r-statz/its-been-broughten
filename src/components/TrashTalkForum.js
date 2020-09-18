@@ -1,19 +1,20 @@
 import React from 'react';
 import '../App.css';
-import Footer from './Footer.js'
-import Header from './Header.js'
+import Footer from './Footer.js';
+import Header from './Header.js';
 
-function AllChallenges() {
+function TrashTalkForum() {
   return (
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <h1 className="howdy">Challenges</h1>
+        <h1 className="howdy">TrashTalkForum</h1>
         <p>Coming soon, thank you for your fucking patience.</p>
+
       </div>
-        <Footer></Footer>
+      <Footer></Footer>
     </div>
   );
 }
 
-export default AllChallenges;
+export default TrashTalkForum;

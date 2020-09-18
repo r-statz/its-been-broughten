@@ -44,8 +44,8 @@ const Arrow = ({ text, className }) => {
 };
  
  
-const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
-const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+// const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
+// const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
  
 const selected = 'item1';
  
@@ -74,8 +74,8 @@ class ScrollMenuComponent extends Component {
       <div className="scroll-container">
         <ScrollMenu
           data={menu}
-          arrowLeft={ArrowLeft}
-          arrowRight={ArrowRight}
+          // arrowLeft={ArrowLeft}
+          // arrowRight={ArrowRight}
           selected={selected}
           onSelect={this.onSelect}
         />

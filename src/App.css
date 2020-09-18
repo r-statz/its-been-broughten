@@ -8,7 +8,9 @@ font-family: 'Josefin Sans', sans-serif;*/
 
 .App {
   text-align: center;
-  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
   background-color: #121c2e;
 }
 
@@ -36,7 +38,6 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .header-title {
   color: #d6f75c;
-
   font-family: 'Frijole', cursive;
   font-size: calc(30px + 2vmin);
   margin: 0 auto;
@@ -44,7 +45,6 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .header-subtitle {
   color: #afd61c;
-
   margin: 2vh;
   font-family: 'Josefin Sans', sans-serif;
   font-size: calc(10px + 2vmin);
@@ -61,11 +61,18 @@ font-family: 'Josefin Sans', sans-serif;*/
   width: 100vw;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+
   justify-content: center;
   font-family: 'Fredoka One', cursive;
-
   font-size: calc(10px + 2vmin);
 }
+.howdy {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
 .App-footer-with-links {
   min-height: 10vh;
   display: flex;
@@ -80,8 +87,17 @@ font-family: 'Josefin Sans', sans-serif;*/
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 425px) {
+  .App-footer-with-links {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: calc(4px + 2vmin);
+  }
+}
+
 .App-footer {
   min-height: 10vh;
+  max-height: 100px;
   display: flex;
   color: #d6f75c;
   flex-direction: row;
@@ -91,16 +107,19 @@ font-family: 'Josefin Sans', sans-serif;*/
   background-color: #121c2e;
   padding-left: 100px;
   padding-right: 100px;
+
+
 }
 
 /*CARD STYLES*/
 .card-container {
   min-height: 300px;
-  width: 24vw;
-  
+  min-width: 24vw;
+  max-width: 260px;
   border: 5px solid #afd61c;
   border-radius: 4px;
   margin: 2vh;
+  margin-top: 3vh;
 }
 .card-header {
   min-height: 20px;
@@ -108,6 +127,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   background-color: #121c2e;
 }
 .card-row {
@@ -124,6 +144,8 @@ font-family: 'Josefin Sans', sans-serif;*/
 .card-subtitle {
   color: #afd61c;
   margin: 2vh;
+  margin: 0 auto;
+  padding-top: 10px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: calc(7px + 2vmin);
 }
@@ -132,7 +154,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   color: rgb(112, 76, 182);
 }
 .card-body {
-  background-color: #1c2b47;
+  background-color: #149bb3;
   color: #d6f75c;
   min-height: 200px;
   display: flex;
@@ -145,16 +167,21 @@ font-family: 'Josefin Sans', sans-serif;*/
   min-height: 20px;
   /* width: 100%; */
   display: flex;
-  color: #149bb3;
+  color: #7eeddb;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(3px + 2vmin);
   background-color: #121c2e;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
+@media only screen and (max-width: 375px) {
+ .card-footer {
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+ }
 /*FORM*/
 .form-container {
   display: flex;
@@ -186,13 +213,15 @@ font-family: 'Josefin Sans', sans-serif;*/
   border: none;
 }
 .menu-item-wrapper.active {
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
 }
 .menu-item.active {
-  border: 1px green solid;
+  /* border: 1px blue solid; */
+  border: none;
 }
 .scroll-container {
   position: relative;
+  min-width: 320px;
 }
 .scroll-menu-arrow {
   padding: 20px;
