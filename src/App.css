@@ -6,10 +6,9 @@ font-family: 'Fredoka One', cursive;
 font-family: 'Frijole', cursive; 
 font-family: 'Josefin Sans', sans-serif;*/
 
-
 .App {
   text-align: center;
-  /* height: 100vh; */
+  position: absolute;
   background-color: #121c2e;
 }
 
@@ -47,7 +46,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   color: #afd61c;
 
   margin: 2vh;
-  font-family: 'Josefin Sans', sans-serif;;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: calc(10px + 2vmin);
 }
 
@@ -63,6 +62,8 @@ font-family: 'Josefin Sans', sans-serif;*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Fredoka One', cursive;
+
   font-size: calc(10px + 2vmin);
 }
 .App-footer-with-links {
@@ -72,10 +73,12 @@ font-family: 'Josefin Sans', sans-serif;*/
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(7px + 2vmin);
   background-color: #121c2e;
   padding-left: 100px;
   padding-right: 100px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
 }
 .App-footer {
   min-height: 10vh;
@@ -90,12 +93,11 @@ font-family: 'Josefin Sans', sans-serif;*/
   padding-right: 100px;
 }
 
-
-
 /*CARD STYLES*/
 .card-container {
   min-height: 300px;
   width: 24vw;
+  
   border: 5px solid #afd61c;
   border-radius: 4px;
   margin: 2vh;
@@ -108,10 +110,12 @@ font-family: 'Josefin Sans', sans-serif;*/
   justify-content: center;
   background-color: #121c2e;
 }
+.card-row {
+  display: flex;
+  flex-direction: row;
+}
 .card-title {
-  /* color: #d6f75c; */
   color: #7eeddb;
-
   font-family: 'Creepster', cursive;
   font-size: calc(18px + 2vmin);
   margin: 0 auto;
@@ -119,9 +123,8 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .card-subtitle {
   color: #afd61c;
-  /* color: #7eeddb; */
   margin: 2vh;
-  font-family: 'Josefin Sans', sans-serif;;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: calc(7px + 2vmin);
 }
 
@@ -131,10 +134,8 @@ font-family: 'Josefin Sans', sans-serif;*/
 .card-body {
   background-color: #1c2b47;
   color: #d6f75c;
-
   min-height: 200px;
   display: flex;
-  /* width: 100vw; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -142,11 +143,9 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .card-footer {
   min-height: 20px;
+  /* width: 100%; */
   display: flex;
   color: #149bb3;
-  /* color: #7eeddb; */
-
-  /* color: #d6f75c; */
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -163,21 +162,69 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .form-input {
   margin: 3vh;
-  min-width: 20em; 
+  min-width: 20em;
   background-color: #121c2e;
-padding: 2vh;
-border: none;
-color: #afd61c;
-font-size: 0.75em;
+  padding: 2vh;
+  border: none;
+  color: #afd61c;
+  font-size: 0.75em;
+  border-radius: 4px;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
+/*SIGNIN*/
+.signin-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 36px;
+}
+/* ScrollMenu */
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+}
+.menu-item.active {
+  border: 1px green solid;
+}
+.scroll-container {
+  position: relative;
+}
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+/*BUTTON */
+.submit-btn {
+  width: 200px;
+  min-height: 50px;
+  background-color: #149bb3;
+  padding: 2vh;
+  border: none;
+  color: #afd61c;
+  border-radius: 4px;
+  letter-spacing: 5px;
+  margin-top: 3vh;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px)
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }

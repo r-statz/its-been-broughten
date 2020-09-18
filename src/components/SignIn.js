@@ -1,29 +1,23 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Link } from "react-router-dom";
+import Header from './Header'
 
-function SignIn(props) {
+function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const history = useHistory();
   const handleClick = () => {
-    console.log("clicked but wtf")
     history.push('/home')
   };
 
-// console.log(props, "props")
-
   return (
     <div className="App">
-      <header className="App-header">
-        <p className="header-title">It's Been Broughten!</p>
-        <p className="header-subtitle">Oh yeah it has...</p>
-      </header>
+      <Header></Header>
       <div className="App-body">
         <form className="form-container">
-          <h1>Hello</h1>
-          <p>Enter your name:</p>
+          <h2 className="signin-text">Log the fuck in, why dontcha?</h2>
+          {/* <p></p> */}
           <input
             className="form-input"
             type="text"
@@ -37,12 +31,14 @@ function SignIn(props) {
             onChange={(password) => setPassword(password)}
           />
         </form>
-        <button onClick={handleClick}>
-          {/* <Link to="/">Homes</Link> */}
+        <button 
+
+        className="submit-btn"
+        onClick={handleClick}>
+          Login
         </button>
       </div>
       <footer className="App-footer">
-        
       </footer>
     </div>
   );

@@ -5,10 +5,11 @@ function Card() {
   return (
     <div className="card-container">
       <header className="card-header">
-        <p className="card-title">Current Challenge</p>
+        <p className="card-title">Active Challenge</p>
         <p className="card-subtitle">* 30 Day Plank *</p>
       </header>
       <div className="card-body">
+        
         <p>Completed: 10/30</p>
         {/* <p>
           <a>My Challenges</a>
