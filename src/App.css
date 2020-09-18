@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Josefin+Sans:wght@300&display=swap&family=Creepster&family=Fredoka+One&family=Frijole&display=swap');
+
+/* font-family: 'Bungee Shade', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Frijole', cursive; 
+font-family: 'Josefin Sans', sans-serif;*/
+
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -14,16 +24,120 @@
 }
 
 .App-header {
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #121c2e;
+}
+.header-title {
+  color: #d6f75c;
+
+  font-family: 'Frijole', cursive;
+  font-size: calc(30px + 2vmin);
+  margin: 0 auto;
+  padding-top: 3vh;
+}
+.header-subtitle {
+  color: #afd61c;
+
+  margin: 2vh;
+  font-family: 'Josefin Sans', sans-serif;;
   font-size: calc(10px + 2vmin);
 }
 
 .App-link {
   color: rgb(112, 76, 182);
+}
+.App-body {
+  background-color: #1c2b47;
+  color: #149bb3;
+  min-height: 60vh;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.App-footer {
+  min-height: 20vh;
+  display: flex;
+  color: #d6f75c;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  background-color: #121c2e;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+
+/*CARD STYLES*/
+.card-container {
+  min-height: 300px;
+  width: 24vw;
+  border: 5px solid #afd61c;
+  border-radius: 4px;
+}
+.card-header {
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121c2e;
+}
+.card-title {
+  /* color: #d6f75c; */
+  color: #7eeddb;
+
+  font-family: 'Creepster', cursive;
+  font-size: calc(18px + 2vmin);
+  margin: 0 auto;
+  padding-top: 3vh;
+}
+.card-subtitle {
+  color: #afd61c;
+  /* color: #7eeddb; */
+  margin: 2vh;
+  font-family: 'Josefin Sans', sans-serif;;
+  font-size: calc(7px + 2vmin);
+}
+
+.card-link {
+  color: rgb(112, 76, 182);
+}
+.card-body {
+  background-color: #1c2b47;
+  /* color: #289482; */
+  color: #7eeddb;
+
+  min-height: 200px;
+  display: flex;
+  /* width: 100vw; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.card-footer {
+  min-height: 20px;
+  display: flex;
+  color: #149bb3;
+  /* color: #7eeddb; */
+
+  /* color: #d6f75c; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3px + 2vmin);
+  background-color: #121c2e;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 @keyframes App-logo-float {
