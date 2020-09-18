@@ -6,14 +6,14 @@ function Card() {
     <div className="card-container">
       <header className="card-header">
         <p className="card-title">Current Challenge</p>
-        <p className="card-subtitle">30 Day Plank</p>
+        <p className="card-subtitle">* 30 Day Plank *</p>
       </header>
-      <body className="card-body">
+      <div className="card-body">
         <p>Completed: 10/30</p>
-        <p>
+        {/* <p>
           <a>My Challenges</a>
-        </p>
-      </body>
+        </p> */}
+      </div>
       <footer className="card-footer">
         <p>Current Overall Ranking: 8th</p>
       </footer>

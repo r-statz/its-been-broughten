@@ -9,20 +9,20 @@ function Home() {
         <p className="header-title">It's Been Broughten!</p>
         <p className="header-subtitle">Oh yeah it has...</p>
       </header>
-      <body className="App-body">
+      <div className="App-body">
         <p>
-          Howdy, Anchovy Special...
+          Howdy, Anchovy Special...You ready to bring it?
         </p>
-        <p>
+        {/* <p>
           You ready to bring it?
-        </p>
+        </p> */}
         <Card></Card>
-      </body>
-      <footer  className="App-footer">
-        <p>Link 1</p>
-        <p>Link 2</p>
-        <p>Link 3</p>
-        <p>Link 4</p>
+      </div>
+      <footer  className="App-footer-with-links">
+        <p>All challenges</p>
+        <p>My Challenges</p>
+        <p>Trash Talk Forum</p>
+        <p>User Stats</p>
       </footer>
     </div>
   );

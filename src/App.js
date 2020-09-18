@@ -1,24 +1,9 @@
-// import React from 'react';
-// import Home from './components/Home.js';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <Home></Home>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 import React from 'react';
-import { Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import history from './services/history';
-import Routes from './routes';
+import Routes from './routes/index';
+console.log(history, "history")
+
 function App() {
   return (
     <Router history={history}>

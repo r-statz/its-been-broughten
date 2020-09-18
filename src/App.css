@@ -9,7 +9,8 @@ font-family: 'Josefin Sans', sans-serif;*/
 
 .App {
   text-align: center;
-  
+  /* height: 100vh; */
+  background-color: #121c2e;
 }
 
 .App-logo {
@@ -22,7 +23,10 @@ font-family: 'Josefin Sans', sans-serif;*/
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
-
+/* .app-container {
+  height: 100vh;
+  background-color: #121c2e;
+} */
 .App-header {
   min-height: 20vh;
   display: flex;
@@ -53,7 +57,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 .App-body {
   background-color: #1c2b47;
   color: #149bb3;
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   width: 100vw;
   flex-direction: column;
@@ -61,8 +65,20 @@ font-family: 'Josefin Sans', sans-serif;*/
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+.App-footer-with-links {
+  min-height: 10vh;
+  display: flex;
+  color: #d6f75c;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  background-color: #121c2e;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .App-footer {
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   color: #d6f75c;
   flex-direction: row;
@@ -82,6 +98,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   width: 24vw;
   border: 5px solid #afd61c;
   border-radius: 4px;
+  margin: 2vh;
 }
 .card-header {
   min-height: 20px;
@@ -113,8 +130,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .card-body {
   background-color: #1c2b47;
-  /* color: #289482; */
-  color: #7eeddb;
+  color: #d6f75c;
 
   min-height: 200px;
   display: flex;
@@ -140,6 +156,20 @@ font-family: 'Josefin Sans', sans-serif;*/
   padding-right: 100px;
 }
 
+/*FORM*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  margin: 3vh;
+  min-width: 20em; 
+  background-color: #121c2e;
+padding: 2vh;
+border: none;
+color: #afd61c;
+font-size: 0.75em;
+}
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
