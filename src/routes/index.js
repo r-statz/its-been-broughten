@@ -8,8 +8,9 @@ import Home from '../components/Home';
 import AllChallenges from '../components/AllChallenges';
 import MyChallenges from '../components/MyChallenges';
 import Challenge from '../components/Challenge';
-import TrashTalkForum from '../components/TrashTalkForum';
+import PeanutGallery from '../components/PeanutGallery';
 import UserStats from '../components/UserStats';
+import BrainGames from '../components/BrainGames';
 
 export default function Routes() {
   return (
@@ -20,8 +21,9 @@ export default function Routes() {
       <Route path="/all-challenges" component={AllChallenges} />
       <Route path="/my-challenges" component={MyChallenges} />
       <Route path="/user-stats" component={UserStats} />
-      <Route path="/trash-talk-forum" component={TrashTalkForum} />
+      <Route path="/peanut-gallery" component={PeanutGallery} />
       <Route path="/challenge" component={Challenge} />
+      <Route path="/brain-games" component={BrainGames} />
       {/* <Route path="/challenge" component={Challenge} /> */}
       {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
       <Route component={SignIn} />

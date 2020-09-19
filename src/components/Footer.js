@@ -14,24 +14,20 @@ function Footer() {
   const toUserStats = () => {
     history.push('/user-stats')
   };
-  const toTrashTalkForum = () => {
-    history.push('/trash-talk-forum')
+  const toPeanutGallery = () => {
+    history.push('/peanut-gallery')
   };
   const toHome = () => {
     history.push('/home')
   };
-  const handleClick = (route) => {
-    console.log(route, "route")
-    history.push(`/${route}`)
 
-  }
   return (
     <div className="App-footer-with-links">
       <p onClick={toHome}>Home</p>
-      <p onClick={toAllChallenges}>All challenges</p>
+      <p onClick={toAllChallenges}>Challenges</p>
       <p onClick={toMyChallenges}>My Challenges</p>
       <p onClick={toUserStats}>User Stats</p>
-      <p onClick={toTrashTalkForum}>Trash Talk Forum</p>
+      <p onClick={toPeanutGallery}>Peanut Gallery</p>
     </div>
   );
 }

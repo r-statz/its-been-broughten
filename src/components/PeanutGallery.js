@@ -3,7 +3,7 @@ import '../App.css';
 import Footer from './Footer.js';
 import Header from './Header.js';
 
-function TrashTalkForum() {
+function toPeanutGallery() {
   return (
     <div className="App">
       <Header></Header>
@@ -17,4 +17,4 @@ function TrashTalkForum() {
   );
 }
 
-export default TrashTalkForum;
+export default toPeanutGallery;

@@ -4,7 +4,7 @@ import Footer from './Footer.js';
 import Header from './Header.js';
 import { useLocation, Link } from 'react-router-dom';
 
-function Challenge() {
+function BrainGames() {
   function useQuery() {
     return new URLSearchParams(useLocation().search);
   }
@@ -12,14 +12,14 @@ function Challenge() {
   const name = query.get('name');
   const description = query.get('description');
   const list = [
-    'Che la Vie',
-    'Anchovy Special',
-    'J.LanCaster',
-    `The "Dog" Bodene`,
-    'Lucy Liu',
-    'Sherlock Holmes',
-    'James Bond',
-    'Franky Four Fingers',
+    'NYTM Word Scramble',
+    'Logic Fun',
+    'Riddle',
+    // `The "Dog" Bodene`,
+    // 'Lucy Liu',
+    // 'Sherlock Holmes',
+    // 'James Bond',
+    // 'Franky Four Fingers',
   ];
 
   return (
@@ -48,4 +48,4 @@ function Challenge() {
   );
 }
 
-export default Challenge;
+export default BrainGames;
