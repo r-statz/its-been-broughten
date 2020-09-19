@@ -14,13 +14,13 @@ function Footer() {
         {/* <Link className="app-link" to="/home">
         User Stats
       </Link> */}
-        <Link className="icon-text-box app-link " to={'/home'}>
+        <Link className="icon-text-box app-link " to={"/home-home"}>
           <div className="icon-text">
             <FontAwesomeIcon className="footer-icon" icon={faHome} />
             <p className="text-icon">Home</p>
           </div>
         </Link>
-        <Link className="app-link icon-text-box" to={'/all-challenges'}>
+        <Link className="app-link icon-text-box" to={"/all-challenges"}>
           <div className="icon-text">
             <FontAwesomeIcon className="footer-icon" icon={faBahai} />
             <p className="text-icon">Challenges</p>

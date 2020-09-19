@@ -18,7 +18,7 @@ export default function Routes() {
     <Switch>
       <Route path="/" exact component={SignIn} />
       <Route path="/register" component={SignUp} />
-      <Route path="/home" component={Home} />
+      <Route path="/home-home" component={Home} />
       <Route path="/all-challenges" component={AllChallenges} />
       <Route path="/my-challenges" component={MyChallenges} />
       <Route path="/user-stats" component={UserStats} />
