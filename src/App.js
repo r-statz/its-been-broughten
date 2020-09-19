@@ -5,7 +5,7 @@ import Routes from './routes/index';
 
 function App() {
   return (
-    <Router history={history}>
+    <Router history={history} basename="/">
       <Routes />
     </Router>
   );
