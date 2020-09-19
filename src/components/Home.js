@@ -8,12 +8,12 @@ function Home() {
   return (
     <div className="App ">
       <Header></Header>
+      <Footer></Footer>
       <div className="challenge-body ">
         <p className="howdy">Howdy, Anchovy Special...</p>
         <p className="howdy">You ready to bring it?</p>
         <ScrollMenuComponent></ScrollMenuComponent>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

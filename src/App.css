@@ -51,16 +51,17 @@ font-family: 'Josefin Sans', sans-serif;*/
 .app-link {
   color: #afd61c;
   text-decoration: none;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
 }
 .App-body {
   overflow-y: scroll;
   background-color: #1c2b47;
   color: #149bb3;
-  min-height: 100vh;
+  min-height: 80vh;
   max-height: 90vh;
   display: flex;
+  /* position: fixed; */
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -83,10 +84,6 @@ font-family: 'Josefin Sans', sans-serif;*/
   justify-content: center;
   font-family: 'Fredoka One', cursive;
   font-size: calc(10px + 2vmin);
-  /* background-image: url('./assets/vintageWaves.jpg');
-  background-repeat: repeat-x;
-  
-  background-size: 1000px 850px; */
 }
 
 .howdy {
@@ -108,7 +105,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   align-items: center;
   justify-content: space-between;
   font-size: calc(7px + 2vmin);
-  background-color: #121c2e;
+  background-color: rgba(28, 43, 71, 0.6);
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   margin: 0 auto;
@@ -116,7 +113,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 .challenge-app-footer-with-links {
   min-height: 10vh;
   max-height: 20vh;
-  display: flex;
+  /* display: flex; */
   color: #d6f75c;
   flex-direction: row;
   align-items: center;
@@ -143,6 +140,12 @@ font-family: 'Josefin Sans', sans-serif;*/
     font-size: calc(10px + 5vmin);
     padding: 10px 0 10px 0;
   }
+  .challenge-body {
+    align-items: left;
+  }
+  /* .challenge-app-footer-with-links {
+    display: block;
+  } */
 }
 
 .App-footer {
@@ -198,6 +201,7 @@ ul {
   border-radius: 4px;
   margin: 2vh;
   margin-top: 3vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 }
 .card-sm-font {
   font-family: 'Josefin Sans', sans-serif;
@@ -220,34 +224,29 @@ ul {
 }
 .card-row {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
 }
 
 .card-title {
-  letter-spacing: 3px;
-  color: #7eeddb;
-  font-family: 'Fredoka One', cursive;
-  /* font-family: 'Creepster', cursive; */
-  font-size: calc(18px + 2vmin);
-  padding-top: 3vh;
+  letter-spacing: 1px;
+  color: #d6f75c;
+  font-size: 48px;
+  text-shadow: 2px 2px rgba(28, 43, 71, 0.6);
 }
+.challenge-card-icon {
+  font-size: 160px;
+  color: rgba(126, 237, 219, 0.7);
+}
+
 .challenge-card-container {
-  margin: 0 auto;
   display: flex;
+  position: fixed;
   flex-direction: row;
 }
 .challenge-card-body {
   height: 240px;
-  width: 240px;
-  padding: 20px;
-  background-color: #149bb3;
-  color: #d6f75c;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 4px;
-  padding: 10px;
-  color: #d6f75c;
-  background-color: #149bb3;
-  margin: 20px;
+  width: 280px;
 }
 .icon-text {
   align-items: center;
@@ -261,7 +260,29 @@ ul {
   position: fixed;
   font-size: calc(22px + 2vmin);
 }
-
+.challenge-icon {
+  align-items: center;
+  color: rgba(126, 237, 219, 0.5);
+  font-size: 200px;
+}
+.challenge-text-icon {
+  z-index: 9;
+  position: fixed;
+  font-size: calc(22px + 3vmin);
+  width: 300px;
+}
+.challenge-text-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  margin: 30px;
+  height: 300px;
+  border-radius: 4px;
+  text-shadow: 3px 3px rgba(28, 43, 71, 0.4);
+  background-color: rgba(20, 155, 179, 0.7);
+}
 .footer-icon {
   /* position: fixed; */
   align-items: center;
@@ -282,9 +303,9 @@ ul {
   color: #afd61c;
   margin: 2vh;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-bottom: 20px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: calc(7px + 2vmin);
+  font-size: 40px;
 }
 
 .card-link {
@@ -313,17 +334,46 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
+.main-body {
+  position: fixed;
+}
+.challenge-card-title {
+  letter-spacing: 1px;
+  color: #d6f75c;
+  z-index:1;
+  font-size: 48px;
+  text-shadow: 2px 2px rgba(28, 43, 71, 0.6);
+}
+.challenge-card-box {
+  /* display: flex; */
+  align-items: center;
+}
 @media only screen and (max-width: 425px) {
   .challenge-card-container {
+    /* display: block; */
     flex-direction: column;
   }
+  .challenge-text-icon {
+    width: 200px;
+  }
+  .challenge-text-box {
+    height: 200px;
+    width: 200px;
+  }
+  .card-row {
+    flex-direction: column;
+  }
+  .challenge-card-title {
+    font-size: 40px;
+  }
   .card-title {
-    font-size: calc(30px + 2vmin);
+    font-size: 20px;
     text-align: center;
-    padding-top: 0;
+    z-index: 10;
   }
   .card-subtitle {
     padding-top: 0;
+    font-size: 20px;
   }
   .card-container {
     max-height: 300px;
@@ -334,6 +384,7 @@ ul {
     max-height: 40px;
   }
   .challenge-card-body {
+    /* text-align: center; */
     height: 200px;
     width: 200px;
   }

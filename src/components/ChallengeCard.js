@@ -24,32 +24,26 @@ function ChallengeCard() {
   //   return () => clearInterval(timerId);
   // }, []);
   return (
-    <div className="challenge-card-container top-padding">
-      <div className="challenge-card-body">
-        <header>
-          <Link className="app-link card-title" to={`/brain-games`}>
-            Brain Games
-          </Link>
-          <FontAwesomeIcon icon={faBrain} size="5x" />
-        </header>
-      </div>
-
-      <div className="challenge-card-body">
-        <header>
-          <Link className="app-link card-title" to={`/physical-feats`}>
-            Physical Feats
-          </Link>
-          <FontAwesomeIcon icon={faRunning} size="5x" />
-        </header>
-      </div>
-
-      <div className="challenge-card-body">
-        <header>
-          <Link className="app-link card-title" to={`/kitchen-fun`}>
-            Kitchen Fun
-          </Link>
-          <FontAwesomeIcon icon={faPepperHot} size="5x" />
-        </header>
+    <div className="challenge-card-container ">
+      <div className="card-row">
+        <Link className="challenge-text-box app-link" to={`/brain-games`}>
+          <div className="icon-text">
+            <FontAwesomeIcon className="challenge-icon" icon={faBrain} />
+            <p className="challenge-text-icon">Brain Games</p>
+          </div>
+        </Link>
+        <Link className="challenge-text-box app-link" to={`/physical-feats`}>
+          <div className="icon-text">
+            <FontAwesomeIcon className="challenge-icon" icon={faRunning} />
+            <p className="challenge-text-icon">Physical Feats</p>
+          </div>
+        </Link>
+        <Link className="challenge-text-box app-link" to={`/kitchen-fun`}>
+          <div className="icon-text">
+            <FontAwesomeIcon className="challenge-icon" icon={faPepperHot} />
+            <p className="challenge-text-icon">Kitchen Fun</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

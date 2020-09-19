@@ -22,10 +22,10 @@ function AllChallenges() {
   return (
     <div className="App">
       <Header></Header>
+      <Footer></Footer>
       <div className="challenge-body">
         <ChallengeCard></ChallengeCard>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

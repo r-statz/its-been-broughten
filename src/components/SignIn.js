@@ -17,7 +17,6 @@ function SignIn() {
       <div className="App-body">
         <form className="form-container">
           <h2 className="signin-text">Log the fuck in, why dontcha?</h2>
-          {/* <p></p> */}
           <input
             className="form-input"
             type="text"
