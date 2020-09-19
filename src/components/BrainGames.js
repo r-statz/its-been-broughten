@@ -5,10 +5,10 @@ import Header from './Header.js';
 import { useLocation, Link } from 'react-router-dom';
 
 function BrainGames() {
-  function useQuery() {
-    return new URLSearchParams(useLocation().search);
-  }
-  let query = useQuery();
+  // function useQuery() {
+  //   return new URLSearchParams(useLocation().search);
+  // }
+  // let query = useQuery();
   const name = 'Brain Games';
   // const description = query.get('description');
   const list = [
@@ -25,7 +25,7 @@ function BrainGames() {
   return (
     <div className="App">
       <Header></Header>
-      <div className="App-body">
+      <div className="challenge-body">
         <h1 className="howdy margin-bottom-md">{name}</h1>
         <div>
           <ul>

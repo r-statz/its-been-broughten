@@ -23,7 +23,7 @@ function PhysicalFeats() {
   return (
     <div className="App">
       <Header></Header>
-      <div className="App-body">
+      <div className="challenge-body">
         <h1 className="howdy">Physical Fun</h1>
         <div className="list">
           {list.map((name, index) => {

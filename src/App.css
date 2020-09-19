@@ -58,8 +58,23 @@ font-family: 'Josefin Sans', sans-serif;*/
   overflow-y: scroll;
   background-color: #1c2b47;
   color: #149bb3;
-  min-height: 60vh;
-  max-height: 75vh;
+  min-height: 100vh;
+  max-height: 90vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: calc(10px + 2vmin);
+}
+.challenge-body {
+  overflow-y: scroll;
+  background-color: #1c2b47;
+  color: #149bb3;
+  min-height: 70vh;
+  max-height: 90vh;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -74,7 +89,6 @@ font-family: 'Josefin Sans', sans-serif;*/
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  /* font-family: 'Josefin Sans', sans-serif; */
   letter-spacing: 2px;
 }
 .sub-howdy {
@@ -84,6 +98,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 .App-footer-with-links {
   min-height: 10vh;
   max-height: 20vh;
+  width: 100%;
   display: flex;
   color: #d6f75c;
   flex-direction: row;
@@ -91,11 +106,24 @@ font-family: 'Josefin Sans', sans-serif;*/
   justify-content: space-between;
   font-size: calc(7px + 2vmin);
   background-color: #121c2e;
-  padding-left: calc(15px + 20vmin);
-  padding-right: calc(15px + 20vmin);
-  padding-bottom: calc(15px + 5vmin);
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+  margin: 0 auto;
+
+}
+.challenge-app-footer-with-links {
+  min-height: 10vh;
+  max-height: 20vh;
+  display: flex;
+  color: #d6f75c;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(7px + 2vmin);
+  background-color: #121c2e;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 425px) {
@@ -291,9 +319,14 @@ ul {
   }
   .card-container {
     max-height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .card-body {
     max-height: 40px;
+  }
+  .card-header {
+    max-height: 100px;
   }
   .card-footer {
     max-height: 40px;

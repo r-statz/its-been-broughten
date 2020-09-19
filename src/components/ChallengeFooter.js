@@ -28,7 +28,7 @@ function ChallengeFooter() {
   // };
 
   return (
-    <div className="App-footer-with-links">
+    <div className="challenge-app-footer-with-links">
       <Link className="app-link" to="/home">
       <FontAwesomeIcon icon={faHome} size="3x" />
       </Link>
