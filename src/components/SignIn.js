@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from './Header'
+import { useHistory, Link } from 'react-router-dom';
+import Header from './Header';
 
 function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
-  const history = useHistory();
-  const handleClick = () => {
-    history.push('/home')
-  };
+
+  // const history = useHistory();
+  // const handleClick = () => {
+  //   history.push('/home')
+  // };
 
   return (
     <div className="App">
@@ -30,15 +30,13 @@ function SignIn() {
             onChange={(password) => setPassword(password)}
           />
         </form>
-        <button 
-
-        className="submit-btn"
-        onClick={handleClick}>
-          Login
+        <button className="submit-btn" >
+          <Link className="app-link" to="/home">
+            Login
+          </Link>
         </button>
       </div>
-      <footer className="App-footer">
-      </footer>
+      <footer className="App-footer"></footer>
     </div>
   );
 }
