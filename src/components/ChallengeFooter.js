@@ -30,7 +30,7 @@ function ChallengeFooter() {
   return (
     <div className="challenge-app-footer-with-links">
       <div className="logo-row">
-        <Link className="app-link" to="/home-home">
+        <Link className="app-link" to="/home">
           <FontAwesomeIcon icon={faHome} size="3x" />
         </Link>
         <Link className="app-link" to="/brain-games">

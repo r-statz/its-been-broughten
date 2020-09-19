@@ -8,7 +8,7 @@ function SignIn() {
 
   const history = useHistory();
   const handleClick = () => {
-    history.push('/home-home')
+    history.push('/home')
   };
 
   return (

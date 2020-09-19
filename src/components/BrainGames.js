@@ -32,7 +32,7 @@ function BrainGames() {
             {list.map((name, index) => {
               return (
                 <div className="name-item" key={index}>
-                  <Link className="item" to="/home-home">
+                  <Link className="item" to="/home">
                     {name}
                   </Link>
                 </div>
