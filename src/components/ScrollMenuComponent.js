@@ -71,7 +71,7 @@ class ScrollMenuComponent extends Component {
     const menu = this.menuItems;
  
     return (
-      <div className="scroll-container">
+      // <div className="scroll-container">
         <ScrollMenu
           data={menu}
           // arrowLeft={ArrowLeft}
@@ -79,7 +79,7 @@ class ScrollMenuComponent extends Component {
           selected={selected}
           onSelect={this.onSelect}
         />
-      </div>
+      // </div>
     );
   }
 }

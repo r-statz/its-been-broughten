@@ -25,7 +25,7 @@ function KitchenFun() {
   return (
     <div className="App">
       <Header></Header>
-      <div className="challenge-body">
+      <div className="challenge-body top-padding">
         <h1 className="howdy margin-bottom-md">{name}</h1>
         <div>
           <ul>

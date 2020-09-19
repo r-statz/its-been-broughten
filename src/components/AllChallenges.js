@@ -23,7 +23,7 @@ function AllChallenges() {
     <div className="App">
       <Header></Header>
       <Footer></Footer>
-      <div className="challenge-body">
+      <div className="scroll-body top-padding">
         <ChallengeCard></ChallengeCard>
       </div>
     </div>

@@ -9,9 +9,10 @@ function Home() {
     <div className="App ">
       <Header></Header>
       <Footer></Footer>
-      <div className="challenge-body ">
-        <p className="howdy">Howdy, Anchovy Special...</p>
-        <p className="howdy">You ready to bring it?</p>
+      <div className="challenge-body">
+        <p className="howdy top-padding">
+          Howdy, Anchovy Special...You ready to bring it?
+        </p>
         <ScrollMenuComponent></ScrollMenuComponent>
       </div>
     </div>

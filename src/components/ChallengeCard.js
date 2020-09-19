@@ -24,23 +24,23 @@ function ChallengeCard() {
   //   return () => clearInterval(timerId);
   // }, []);
   return (
-    <div className="challenge-card-container ">
+    <div className="challenge-card-container">
       <div className="card-row">
         <Link className="challenge-text-box app-link" to={`/brain-games`}>
           <div className="icon-text">
-            <FontAwesomeIcon className="challenge-icon" icon={faBrain} />
+            <FontAwesomeIcon className="challenge-icon App-logo" icon={faBrain} />
             <p className="challenge-text-icon">Brain Games</p>
           </div>
         </Link>
         <Link className="challenge-text-box app-link" to={`/physical-feats`}>
           <div className="icon-text">
-            <FontAwesomeIcon className="challenge-icon" icon={faRunning} />
+            <FontAwesomeIcon className="challenge-icon App-logo" icon={faRunning} />
             <p className="challenge-text-icon">Physical Feats</p>
           </div>
         </Link>
         <Link className="challenge-text-box app-link" to={`/kitchen-fun`}>
           <div className="icon-text">
-            <FontAwesomeIcon className="challenge-icon" icon={faPepperHot} />
+            <FontAwesomeIcon className="challenge-icon App-logo" icon={faPepperHot} />
             <p className="challenge-text-icon">Kitchen Fun</p>
           </div>
         </Link>

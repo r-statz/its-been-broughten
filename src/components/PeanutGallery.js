@@ -8,7 +8,7 @@ function toPeanutGallery() {
     <div className="App">
       <Header></Header>
       <Footer></Footer>
-      <div className="challenge-body">
+      <div className="challenge-body top-padding">
         <h1 className="howdy">Trash Talk Forum</h1>
         <p>Coming soon, thank you for your gracious fucking patience.</p>
 
