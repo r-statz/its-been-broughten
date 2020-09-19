@@ -31,8 +31,8 @@ function BrainGames() {
           <ul>
             {list.map((name, index) => {
               return (
-                <div className="name-item">
-                  <Link className="item" key={index} to='/home'>
+                <div className="name-item" key={index}>
+                  <Link className="item" to='/home'>
                     {name}
                   </Link>
                 </div>
