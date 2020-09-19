@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBrain,

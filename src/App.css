@@ -71,7 +71,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 .challenge-body {
   overflow-y: scroll;
-  background-color: #1c2b47;
+  background-color: rgba(28, 43, 71, 1);
   color: #149bb3;
   min-height: 70vh;
   max-height: 90vh;
@@ -83,6 +83,10 @@ font-family: 'Josefin Sans', sans-serif;*/
   justify-content: center;
   font-family: 'Fredoka One', cursive;
   font-size: calc(10px + 2vmin);
+  /* background-image: url('./assets/vintageWaves.jpg');
+  background-repeat: repeat-x;
+  
+  background-size: 1000px 850px; */
 }
 
 .howdy {
@@ -99,7 +103,6 @@ font-family: 'Josefin Sans', sans-serif;*/
   min-height: 10vh;
   max-height: 20vh;
   width: 100%;
-  display: flex;
   color: #d6f75c;
   flex-direction: row;
   align-items: center;
@@ -109,7 +112,6 @@ font-family: 'Josefin Sans', sans-serif;*/
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   margin: 0 auto;
-
 }
 .challenge-app-footer-with-links {
   min-height: 10vh;
@@ -150,11 +152,16 @@ font-family: 'Josefin Sans', sans-serif;*/
   color: #d6f75c;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   background-color: #121c2e;
   padding-left: 100px;
   padding-right: 100px;
+}
+.logo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*LIST*/
@@ -219,8 +226,9 @@ ul {
 .card-title {
   letter-spacing: 3px;
   color: #7eeddb;
-  font-family: 'Creepster', cursive;
-  font-size: calc(22px + 2vmin);
+  font-family: 'Fredoka One', cursive;
+  /* font-family: 'Creepster', cursive; */
+  font-size: calc(18px + 2vmin);
   padding-top: 3vh;
 }
 .challenge-card-container {
@@ -229,8 +237,8 @@ ul {
   flex-direction: row;
 }
 .challenge-card-body {
-  height: 200px;
-  width: 200px;
+  height: 240px;
+  width: 240px;
   padding: 20px;
   background-color: #149bb3;
   color: #d6f75c;
@@ -251,15 +259,15 @@ ul {
 .text-icon {
   z-index: 9;
   position: fixed;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(22px + 2vmin);
 }
 
 .footer-icon {
-  position: fixed;
+  /* position: fixed; */
   align-items: center;
   color: rgba(20, 155, 179, 0.7);
-  font-size: 58px;
-  padding: 10px;
+  font-size: 90px;
+  /* padding: 10px; */
 }
 
 .icon-text-box {
@@ -285,7 +293,7 @@ ul {
 .card-body {
   background-color: #149bb3;
   color: #d6f75c;
-  
+
   min-height: 120px;
   display: flex;
   flex-direction: column;
@@ -325,6 +333,10 @@ ul {
   .card-body {
     max-height: 40px;
   }
+  .challenge-card-body {
+    height: 200px;
+    width: 200px;
+  }
   .card-header {
     max-height: 100px;
   }
@@ -334,10 +346,17 @@ ul {
   .icon-text-box {
     width: 100px;
   }
+  .icon-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .text-icon {
     z-index: 9;
     position: fixed;
     font-size: calc(10px + 2vmin);
+  }
+  .footer-icon {
+    font-size: 58px;
   }
 }
 

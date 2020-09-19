@@ -6,7 +6,7 @@ import {
   faBrain,
   faPepperHot,
   faRunning,
-  faHome
+  faHome,
 } from '@fortawesome/free-solid-svg-icons';
 
 function ChallengeFooter() {
@@ -29,19 +29,21 @@ function ChallengeFooter() {
 
   return (
     <div className="challenge-app-footer-with-links">
-      <Link className="app-link" to="/home">
-      <FontAwesomeIcon icon={faHome} size="3x" />
-      </Link>
-      <Link className="app-link" to="/brain-games">
-        {' '}
-        <FontAwesomeIcon icon={faBrain} size="3x" />
-      </Link>
-      <Link className="app-link" to="/kitchen-fun">
-        <FontAwesomeIcon icon={faPepperHot} size="3x" />
-      </Link>
-      <Link className="app-link" to="/physical-feats">
-        <FontAwesomeIcon icon={faRunning} size="3x" />
-      </Link>
+      <div className="logo-row">
+        <Link className="app-link" to="/home">
+          <FontAwesomeIcon icon={faHome} size="3x" />
+        </Link>
+        <Link className="app-link" to="/brain-games">
+          {' '}
+          <FontAwesomeIcon icon={faBrain} size="3x" />
+        </Link>
+        <Link className="app-link" to="/kitchen-fun">
+          <FontAwesomeIcon icon={faPepperHot} size="3x" />
+        </Link>
+        <Link className="app-link" to="/physical-feats">
+          <FontAwesomeIcon icon={faRunning} size="3x" />
+        </Link>
+      </div>
     </div>
   );
 }
