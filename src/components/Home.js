@@ -6,7 +6,7 @@ import ScrollMenuComponent from './ScrollMenuComponent.js';
 
 function Home() {
   return (
-    <div className="App ">
+    <div className="App">
       <Header></Header>
       <Footer></Footer>
       <div className="challenge-body">
