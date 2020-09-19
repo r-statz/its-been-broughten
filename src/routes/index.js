@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
 import Route from './Route';
-// import { Switch, Route } from 'react-router-dom';
 import SignIn from '../components/SignIn';
 import SignUp from '../components/SignUp';
 import Home from '../components/Home';
@@ -28,7 +27,7 @@ export default function Routes() {
       <Route path="/brain-games" component={BrainGames} />
       <Route path="/physical-feats" component={PhysicalFeats} />
       <Route path="/kitchen-fun" component={KitchenFun} />
-      {/* <Route path="/challenge" component={Challenge} /> */}
+
       {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
       <Route component={SignIn} />
     </Switch>

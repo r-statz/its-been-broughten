@@ -6,10 +6,10 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  // const history = useHistory();
-  // const handleClick = () => {
-  //   history.push('/home')
-  // };
+  const history = useHistory();
+  const handleClick = () => {
+    history.push('/home')
+  };
 
   return (
     <div className="App">
@@ -30,10 +30,10 @@ function SignIn() {
             onChange={(password) => setPassword(password)}
           />
         </form>
-        <button className="submit-btn" >
-          <Link className="app-link" to="/home">
+        <button className="submit-btn" onClick={handleClick}>
+          {/* <Link className="app-link" to="/home"> */}
             Login
-          </Link>
+          {/* </Link> */}
         </button>
       </div>
       <footer className="App-footer"></footer>

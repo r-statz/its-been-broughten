@@ -9,7 +9,7 @@ function KitchenFun() {
     return new URLSearchParams(useLocation().search);
   }
   let query = useQuery();
-  const name = 'Kitchen Fun'
+  const name = 'Kitchen Fun';
   const description = query.get('description');
   const list = [
     'Bake Bread Like a Boss',
@@ -32,7 +32,7 @@ function KitchenFun() {
             {list.map((name, index) => {
               return (
                 <div className="name-item" key={index}>
-                  <Link className="item" to='/home'>
+                  <Link className="item" to="/home">
                     {name}
                   </Link>
                 </div>
