@@ -4,32 +4,30 @@ import ChallengeFooter from './ChallengeFooter.js';
 import Header from './Header.js';
 import { useLocation, Link } from 'react-router-dom';
 
-function Challenge() {
+function KitchenFun() {
   function useQuery() {
     return new URLSearchParams(useLocation().search);
   }
   let query = useQuery();
-  const name = query.get('name');
+  const name = 'Kitchen Fun'
   const description = query.get('description');
   const list = [
-    'Che la Vie',
-    'Anchovy Special',
-    'J.LanCaster',
-    `The "Dog" Bodene`,
-    'Lucy Liu',
-    'Sherlock Holmes',
-    'James Bond',
-    'Franky Four Fingers',
+    'Bake Bread Like a Boss',
+    'Paul Hollywood Pie Crust',
+    '2 weeks Vegan',
+    // `The "Dog" Bodene`,
+    // 'Lucy Liu',
+    // 'Sherlock Holmes',
+    // 'James Bond',
+    // 'Franky Four Fingers',
   ];
 
   return (
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <h1 className="howdy">{name}</h1>
-        <p className="sub-howdy">What's the Challenge? {description}</p>
+        <h1 className="howdy margin-bottom-md">{name}</h1>
         <div>
-          <h2>Participants</h2>
           <ul>
             {list.map((name, index) => {
               return (
@@ -48,4 +46,4 @@ function Challenge() {
   );
 }
 
-export default Challenge;
+export default KitchenFun;

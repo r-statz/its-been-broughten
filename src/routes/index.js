@@ -11,6 +11,8 @@ import Challenge from '../components/Challenge';
 import PeanutGallery from '../components/PeanutGallery';
 import UserStats from '../components/UserStats';
 import BrainGames from '../components/BrainGames';
+import PhysicalFeats from '../components/PhysicalFeats';
+import KitchenFun from '../components/KitchenFun';
 
 export default function Routes() {
   return (
@@ -24,6 +26,8 @@ export default function Routes() {
       <Route path="/peanut-gallery" component={PeanutGallery} />
       <Route path="/challenge" component={Challenge} />
       <Route path="/brain-games" component={BrainGames} />
+      <Route path="/physical-feats" component={PhysicalFeats} />
+      <Route path="/kitchen-fun" component={KitchenFun} />
       {/* <Route path="/challenge" component={Challenge} /> */}
       {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
       <Route component={SignIn} />

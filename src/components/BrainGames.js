@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Footer from './Footer.js';
+import ChallengeFooter from './ChallengeFooter.js';
 import Header from './Header.js';
 import { useLocation, Link } from 'react-router-dom';
 
@@ -9,8 +9,8 @@ function BrainGames() {
     return new URLSearchParams(useLocation().search);
   }
   let query = useQuery();
-  const name = query.get('name');
-  const description = query.get('description');
+  const name = 'Brain Games';
+  // const description = query.get('description');
   const list = [
     'NYTM Word Scramble',
     'Logic Fun',
@@ -26,10 +26,8 @@ function BrainGames() {
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        <h1 className="howdy">{name}</h1>
-        <p className="sub-howdy">What's the Challenge? {description}</p>
+        <h1 className="howdy margin-bottom-md">{name}</h1>
         <div>
-          <h2>Participants</h2>
           <ul>
             {list.map((name, index) => {
               return (
@@ -43,7 +41,7 @@ function BrainGames() {
           </ul>
         </div>
       </div>
-      <Footer></Footer>
+      <ChallengeFooter></ChallengeFooter>
     </div>
   );
 }

@@ -10,6 +10,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  height: 100%;
   position: fixed;
   background-color: #121c2e;
 }
@@ -24,10 +25,7 @@ font-family: 'Josefin Sans', sans-serif;*/
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
-/* .app-container {
-  height: 100vh;
-  background-color: #121c2e;
-} */
+
 .App-header {
   min-height: 20vh;
   display: flex;
@@ -50,28 +48,33 @@ font-family: 'Josefin Sans', sans-serif;*/
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.app-link {
+  color: #afd61c;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
 }
 .App-body {
+  overflow-y: scroll;
   background-color: #1c2b47;
   color: #149bb3;
-  min-height: 70vh;
+  min-height: 60vh;
+  max-height: 75vh;
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
   justify-content: center;
   font-family: 'Fredoka One', cursive;
   font-size: calc(10px + 2vmin);
 }
+
 .howdy {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
   letter-spacing: 2px;
 }
 .sub-howdy {
@@ -80,6 +83,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 
 .App-footer-with-links {
   min-height: 10vh;
+  max-height: 20vh;
   display: flex;
   color: #d6f75c;
   flex-direction: row;
@@ -87,16 +91,27 @@ font-family: 'Josefin Sans', sans-serif;*/
   justify-content: space-between;
   font-size: calc(7px + 2vmin);
   background-color: #121c2e;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: calc(15px + 20vmin);
+  padding-right: calc(15px + 20vmin);
+  padding-bottom: calc(15px + 5vmin);
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
 }
+
 @media only screen and (max-width: 425px) {
   .App-footer-with-links {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0;
     font-size: calc(4px + 2vmin);
+  }
+  .top-padding {
+    padding-top: calc(10px + 15vmin);
+  }
+  .App-header {
+    min-height: 15vh;
+  }
+  .header-title {
+    font-size: calc(10px + 5vmin);
+    padding: 10px 0 10px 0;
   }
 }
 
@@ -123,6 +138,9 @@ font-family: 'Josefin Sans', sans-serif;*/
   text-transform: uppercase;
   color: #7eeddb;
   text-decoration: none;
+}
+.margin-bottom-md {
+  margin-bottom: 0px;
 }
 .item:hover {
   color: #d6f75c;
@@ -169,40 +187,61 @@ ul {
   display: flex;
   flex-direction: row;
 }
-.challenge-card-body {
-  /* height: 140px; 
-  width: 140px; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin); */
+
+.card-title {
+  letter-spacing: 3px;
+  color: #7eeddb;
+  font-family: 'Creepster', cursive;
+  font-size: calc(22px + 2vmin);
+  padding-top: 3vh;
 }
 .challenge-card-container {
-  height: 200px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.challenge-card-body {
+  height: 200px;
   width: 200px;
   padding: 20px;
   background-color: #149bb3;
   color: #d6f75c;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 4px;
+  padding: 10px;
+  color: #d6f75c;
+  background-color: #149bb3;
+  margin: 20px;
 }
-.card-title {
-  letter-spacing: 3px;
-  color: #7eeddb;
-  font-family: 'Creepster', cursive;
-  font-size: calc(22px + 2vmin);
-  margin: 0 auto;
-  padding-top: 3vh;
+.icon-text {
+  align-items: center;
+  display: flex;
+  z-index: 0;
+  justify-content: center;
+  text-align: center;
 }
-/* .challenge-card-title-card-title {
-  color: #7eeddb;
-  font-family: 'Creepster', cursive;
-  font-size: calc(18px + 2vmin);
-  margin: 0 auto;
-  
-  padding-top: 3vh;
-} */
+.text-icon {
+  z-index: 9;
+  position: fixed;
+  font-size: calc(20px + 2vmin);
+}
+
+.footer-icon {
+  position: fixed;
+  align-items: center;
+  color: rgba(20, 155, 179, 0.7);
+  font-size: 58px;
+  padding: 10px;
+}
+
+.icon-text-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+}
+
 .card-subtitle {
   color: #afd61c;
   margin: 2vh;
@@ -218,7 +257,8 @@ ul {
 .card-body {
   background-color: #149bb3;
   color: #d6f75c;
-  min-height: 200px;
+  
+  min-height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,7 +267,6 @@ ul {
 }
 .card-footer {
   min-height: 20px;
-  /* width: 100%; */
   display: flex;
   color: #7eeddb;
   flex-direction: row;
@@ -238,12 +277,37 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
+  .challenge-card-container {
+    flex-direction: column;
+  }
+  .card-title {
+    font-size: calc(30px + 2vmin);
+    text-align: center;
+    padding-top: 0;
+  }
+  .card-subtitle {
+    padding-top: 0;
+  }
+  .card-container {
+    max-height: 300px;
+  }
+  .card-body {
+    max-height: 40px;
+  }
   .card-footer {
-    padding-left: 10px;
-    padding-right: 10px;
+    max-height: 40px;
+  }
+  .icon-text-box {
+    width: 100px;
+  }
+  .text-icon {
+    z-index: 9;
+    position: fixed;
+    font-size: calc(10px + 2vmin);
   }
 }
+
 /*FORM*/
 .form-container {
   display: flex;

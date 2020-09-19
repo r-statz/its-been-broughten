@@ -23,22 +23,7 @@ function AllChallenges() {
     <div className="App">
       <Header></Header>
       <div className="App-body">
-        {/* <h1 className="howdy">All Challenges</h1> */}
         <ChallengeCard></ChallengeCard>
-        {/* <div className="list">
-          {list.map((name, index) => {
-            return (
-              <div key={index}>
-                <Link
-                  className="item"
-                  to={`/challenge?name=${name}&description=${description}`}
-                >
-                  {name}
-                </Link>
-              </div>
-            );
-          })}
-        </div> */}
       </div>
       <Footer></Footer>
     </div>
