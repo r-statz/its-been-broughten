@@ -25,7 +25,7 @@ function Challenge() {
   return (
     <div className="App">
       <Header></Header>
-      <div className="App-body">
+      <div className="challenge-body">
         <h1 className="howdy">{name}</h1>
         <p className="sub-howdy">What's the Challenge? {description}</p>
         <div>
