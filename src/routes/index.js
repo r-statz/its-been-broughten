@@ -29,7 +29,7 @@ export default function Routes() {
       <Route path="/kitchen-fun" component={KitchenFun} />
 
       {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
-      <Route component={SignIn} />
+      {/* <Route component={SignIn} /> */}
     </Switch>
   );
 }

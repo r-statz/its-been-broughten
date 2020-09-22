@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import history from './services/history';
+// import { BrowserRouter as Router } from 'react-router-dom';
+// import history from './services/history';
 import Routes from './routes/index';
 
 function App() {
   return (
-    <Router history={history}>
+    // <Router >
       <Routes />
-    </Router>
+    // </Router>
   );
 }
 export default App;

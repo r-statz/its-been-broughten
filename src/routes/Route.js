@@ -7,28 +7,28 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  // const signed = false;
+  const signed = false;
 
   /**
    * Redirect user to SignIn page if he tries to access a private route
    * without authentication.
    */
-  // if (isPrivate && !signed) {
-  //   return <Redirect to="/" />;
-  // }
+  if (isPrivate && !signed) {
+    return <Redirect to="/" />;
+  }
 
   /**
    * Redirect user to Main page if he tries to access a non private route
    * (SignIn or SignUp) after being authenticated.
    */
-  // if (!isPrivate && signed) {
-  //   return <Redirect to="/home" />;
-  // }
+  if (!isPrivate && signed) {
+    return <Redirect to="/home" />;
+  }
 
   /**
    * If not included on both previous cases, redirect user to the desired route.
    */
-  return <Route {...rest} component={Component} />;
+  return <Route  component={Component} />;
 }
 
 RouteWrapper.propTypes = {
@@ -38,5 +38,5 @@ RouteWrapper.propTypes = {
 };
 
 RouteWrapper.defaultProps = {
-  isPrivate: false,
+  isPrivate: false
 };

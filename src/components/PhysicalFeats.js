@@ -24,7 +24,7 @@ function PhysicalFeats() {
     <div className="App">
       <Header></Header>
       <div className="challenge-body top-padding">
-        <h1 className="howdy">Physical Fun</h1>
+        <h1 className="howdy">Physical Feats</h1>
         <div className="list">
           {list.map((name, index) => {
             return (
